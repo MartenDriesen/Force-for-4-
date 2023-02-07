@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+body {
+    background-color: black;
+    background-image: url(images/achtergrond.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    background-attachment: fixed;
+
+}
+
+.back {
+    grid-column: 4/5;
+    align-self: center;
+}
+
+.back img {
+    width: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    grid-column: 4/10;
+
+}
+
+input {
+    margin: 10px 0 0 0;
+    font-family: "kanit";
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid 2px #bfa07a;
+}
+
+#submit {
+    margin: 10px 0 0 0;
+    font-family: "kanit";
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid 2px #bfa07a;
+}
+
+#message {
+    margin: 30px 0 0 0;
+    font-family: "kanit";
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid 2px #bfa07a;
+}
+
+#name {
+    margin: 70px 0 0 0;
+}
+
+.grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    display: grid;
+}
+
+
+
+h1 {
+    color: #bfa07a;
+    font-family: "Kanit";
+}
+
+p {
+    font-family: "Kanit";
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.wrapper {
+    margin: 5% 5% 0 5%;
+}
+
+.logo {
+
+    grid-column: 6/8;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.icons {
+    grid-column: 1/13;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.icon {
+    width: 5%;
+    margin: 20px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+
+    p {
+        font-size: 14pt;
+    }
+
+    .icon {
+        width: 50px;
+        margin: 20px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width:950px) {}
+
+@media (max-width:820px) {
+    .form {
+        display: flex;
+        justify-content: center;
+        grid-column: 3/11;
+
+    }
+
+    .back {
+        grid-column: 3/4;
+    }
+
+    .back img {
+        width: 20px;
+    }
+
+
+    h1 {
+        font-size: 18pt;
+    }
+}
+
+
+@media (max-width:650px) {
+    .logo {
+        width: 140%;
+        justify-self: center;
+    }
+
+
+    h1 {
+        font-size: 16pt;
+    }
+
+}
+
+@media (max-width:560px) {
+    .form {
+        display: flex;
+        justify-content: center;
+        grid-column: 2/12;
+
+    }
+
+    .back {
+        grid-column: 2/3;
+    }
+
+    .back img {
+        width: 15px;
+    }
+
+    h1 {
+        font-size: 12pt;
+    }
+
+    p {
+        font-size: 10pt;
+    }
+
+    .icon {
+        width: 40px;
+        margin: 20px;
+    }
+}
+
+
+
+@media (max-width:350px) {
+
+    .logo {
+        width: 180%;
+        justify-self: center;
+    }
+
+
+    .back {
+        grid-column: 1/2;
+    }
+
+    .back img {
+        width: 15px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        grid-column: 1/13;
+
+    }
+}
+
+@media (max-width:270px) {
+    .icon {
+        width: 100px;
+        margin: 15px;
+    }
+}

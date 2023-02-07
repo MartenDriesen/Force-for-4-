@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+body {
+    background-color: black;
+    background-image: url(images/achtergrond.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    background-attachment: fixed;
+
+}
+
+
+
+.grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    display: grid;
+}
+
+
+
+
+
+h1 {
+    color: #bfa07a;
+    font-family: "Kanit";
+}
+
+p {
+    font-family: "Kanit";
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.wrapper {
+    margin: 5% 5% 0 5%;
+}
+
+.logo {
+
+    grid-column: 6/8;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.samen {
+    display: flex;
+    grid-column: 3/11;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    width: 100%;
+}
+
+.samen img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.omschrijving {
+    grid-column: 3/11;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 0 0;
+}
+
+.omschrijving h1 {
+    text-align: center;
+}
+
+
+.omschrijving p {
+    text-align: center;
+    color: white;
+}
+
+
+.leden {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    border: solid 5px #ca9e67;
+    padding: 5%;
+    box-shadow: 0 0 0px #ca9e67;
+}
+
+.leden div {
+    margin-top: 20px;
+}
+
+.ledenmobile {
+    display: none;
+}
+
+.stan {
+    display: flex;
+    grid-column: 1/13;
+    color: white;
+}
+
+.stantext {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+}
+
+.stan img {
+    grid-column: 1/6;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.jan {
+    display: flex;
+    grid-column: 1/13;
+    color: white;
+}
+
+.jantext {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 50px;
+}
+
+.jan img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.chris {
+    display: flex;
+    grid-column: 1/13;
+    color: white;
+}
+
+.christext {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.chris img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.icons {
+    grid-column: 1/13;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.icon {
+    width: 5%;
+    margin: 20px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+
+    p {
+        font-size: 14pt;
+    }
+
+    .icon {
+        width: 50px;
+        margin: 20px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width:950px) {
+
+    .ledenmobile {
+        margin-top: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        border: solid 5px #ca9e67;
+        padding: 5%;
+        box-shadow: 0 0 0px #ca9e67;
+    }
+
+    .ledenmobile div {
+        margin-top: 20px;
+    }
+
+    .leden {
+        display: none;
+
+    }
+
+    .stan {
+        flex-direction: column;
+
+    }
+
+    .stan img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .stantext {
+        margin: 0;
+    }
+
+    .stantext h1 {
+        text-align: center;
+    }
+
+    .stantext p {
+        text-align: center;
+    }
+
+    .jan {
+        flex-direction: column;
+
+    }
+
+    .jan img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .jantext {
+        margin: 0;
+    }
+
+    .jantext h1 {
+        text-align: center;
+    }
+
+    .jantext p {
+        text-align: center;
+    }
+
+    .chris {
+        flex-direction: column;
+
+    }
+
+    .chris img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .christext {
+        margin: 0;
+    }
+
+    .christext h1 {
+        text-align: center;
+    }
+
+    .christext p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:820px) {
+    h1 {
+        font-size: 18pt;
+    }
+}
+
+
+@media (max-width:650px) {
+    .logo {
+        width: 140%;
+        justify-self: center;
+    }
+
+    h1 {
+        font-size: 16pt;
+    }
+
+    .omschrijving {
+        grid-column: 1/13;
+    }
+}
+
+@media (max-width:560px) {
+    h1 {
+        font-size: 12pt;
+    }
+
+    p {
+        font-size: 10pt;
+    }
+
+    .icon {
+        width: 40px;
+        margin: 20px;
+    }
+}
+
+
+
+@media (max-width:350px) {
+
+    .logo {
+        width: 180%;
+        justify-self: center;
+    }
+
+    .stan img {
+        width: 70%;
+    }
+
+    .jan img {
+        width: 70%;
+    }
+
+
+    .chris img {
+        width: 70%;
+    }
+
+
+}
+
+@media (max-width:270px) {
+    .icon {
+        width: 100px;
+        margin: 15px;
+    }
+}
